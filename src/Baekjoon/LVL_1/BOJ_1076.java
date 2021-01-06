@@ -17,16 +17,16 @@ public class BOJ_1076 {
 
         long aValue = 0, bValue = 0, cValue = 0; // Using long since 'white' has a big #
 
-        for (int i = 0; i < resist.length; i++) {
-            if (a.equals(resist[i][0])) {
-                aValue += Integer.parseInt(resist[i][1]);
+        for (String[] strings : resist) {
+            if (a.equals(strings[0])) {
+                aValue += Integer.parseInt(strings[1]);
                 System.out.println(aValue);
             }
-            if (b.equals(resist[i][0])) {
-                bValue = Integer.parseInt(resist[i][1]);
+            if (b.equals(strings[0])) {
+                bValue = Integer.parseInt(strings[1]);
             }
-            if (c.equals(resist[i][0])) {
-                cValue = Integer.parseInt(resist[i][2]);
+            if (c.equals(strings[0])) {
+                cValue = Integer.parseInt(strings[2]);
             }
         }
 
