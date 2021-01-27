@@ -8,7 +8,7 @@ public class Reverse_integer {
         long reversed = 0;
         int sign = 1;
 
-        if (x < 0) {
+        if (x < 0) { // if x is negative, save that info in sign
             sign *= -1;
             x *= -1;
         }
@@ -27,9 +27,5 @@ public class Reverse_integer {
         }
 
         return 0;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(reverse(2147483646));
     }
 }

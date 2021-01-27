@@ -9,7 +9,7 @@ public class BOJ_1076 {
         //처음 색 2개는 저항의 값이고, 마지막 색은 곱해야 하는 값이다.
         String[][] resist = {{"black", "0", "1"}, {"brown", "1", "10"}, {"red", "2", "100"}, {"orange", "3", "1000"},
                 {"yellow", "4", "10000"}, {"green", "5", "100000"}, {"blue", "6", "1000000"}, {"violet", "7", "10000000"},
-                {"grey", "8", "100000000"}, {"white", "9", "1000000000"}};
+                {"grey", "8", "100000000"}, {"white", "9", "1000000000"}}; // all the values needed
         Scanner sc = new Scanner(System.in);
 
         String a = sc.nextLine(), b = sc.nextLine(), c = sc.nextLine();
