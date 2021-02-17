@@ -22,9 +22,22 @@ public class Programmers_68935 {
         return answer;
     }
 
-    public static void main(String[] args) {
-        int i = 45, j = 125;
-        System.out.println(solution(i));
-        System.out.println(solution(j));
+    public static int solution2(int n) { // 02172021
+        String ternary = "";
+        int temp = n;
+        int answer = 0;
+
+        while (temp > 2) {
+            ternary += String.valueOf(temp % 3);
+            temp /= 3;
+        }
+
+        ternary += String.valueOf(temp);
+
+        for (int i = ternary.length() - 1; i >= 0; i--) {
+            answer += (int) (Character.getNumericValue(ternary.charAt(i)) * Math.pow(3, (ternary.length() - i - 1)));
+        }
+
+        return answer;
     }
 }
