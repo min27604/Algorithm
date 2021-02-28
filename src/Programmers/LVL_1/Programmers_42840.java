@@ -47,5 +47,6 @@ public class Programmers_42840 {
         for (int an : ans) {
             System.out.print(an + " ");
         }
+
     }
 }
