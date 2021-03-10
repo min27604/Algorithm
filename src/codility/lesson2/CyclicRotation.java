@@ -5,7 +5,7 @@ public class CyclicRotation {
         int len = A.length;
         int[] answer = new int[len];
 
-        if (K == 0 || K % len == 0) {
+        if (K == 0 || len == 0 || K % len == 0) {
             return A;
         }
 
